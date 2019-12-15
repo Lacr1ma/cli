@@ -1,0 +1,22 @@
+{
+	"name": "lms/cli",
+	"type": "typo3-cms-extension",
+	"description": "Extends typo3 core cli commands with additional functionality.",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Serhii Borulko",
+			"email": "borulkosergey@icloud.com"
+		}
+	],
+	"require": {
+		"typo3/cms-core": "^9.5",
+		"lms/facade": "dev-master",
+		"mcstreetguy/composer-parser": "^1.1"
+	},
+	"autoload": {
+		"psr-4": {
+			"LMS\\Cli\\": "Classes"
+		}
+	}
+}

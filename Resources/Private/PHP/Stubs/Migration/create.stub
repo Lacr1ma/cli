@@ -1,0 +1,7 @@
+
+#
+# Table structure for table 'dummyTable'
+#
+CREATE TABLE dummyTable (
+
+);

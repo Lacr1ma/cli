@@ -1,0 +1,106 @@
+<?php
+declare(strict_types = 1);
+
+namespace Vendor\Ext\Controller;
+
+/* * *************************************************************
+ *
+ *  Copyright notice
+ *
+ *  All rights reserved
+ *
+ *  This script is part of the TYPO3 project. The TYPO3 project is
+ *  free software; you can redistribute it and/or modify
+ *  it under the terms of the GNU General Public License as published by
+ *  the Free Software Foundation; either version 3 of the License, or
+ *  (at your option) any later version.
+ *
+ *  The GNU General Public License can be found at
+ *  http://www.gnu.org/copyleft/gpl.html.
+ *
+ *  This script is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  This copyright notice MUST APPEAR in all copies of the script!
+ * ************************************************************* */
+
+use DummyFullModelClass;
+
+/**
+ * @author John Dou <me@example.com>
+ */
+class DummyClass extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
+{
+    /**
+     * Display a listing of the resource.
+     */
+    public function indexAction(): void
+    {
+        //
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @param \DummyFullModelClass $DummyModelVariable
+     * @IgnoreValidation $DummyModelVariable
+     */
+    public function createAction(DummyModelClass $DummyModelVariable = null): void
+    {
+        $this->view->assign('_', $DummyModelVariable);
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param \DummyFullModelClass $DummyModelVariable
+     */
+    public function storeAction(DummyModelClass $DummyModelVariable): void
+    {
+        //
+    }
+
+    /**
+     * Display the specified resource.
+     *
+     * @param \DummyFullModelClass $DummyModelVariable
+     */
+    public function show(DummyModelClass $DummyModelVariable): void
+    {
+        $this->view->assign('_', $DummyModelVariable);
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param \DummyFullModelClass $DummyModelVariable
+     */
+    public function edit(DummyModelClass $DummyModelVariable): void
+    {
+        //
+
+        $this->view->assign('_', $DummyModelVariable);
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param \DummyFullModelClass $DummyModelVariable
+     */
+    public function update(DummyModelClass $DummyModelVariable): void
+    {
+        //
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param \DummyFullModelClass $DummyModelVariable
+     */
+    public function destroy(DummyModelClass $DummyModelVariable): void
+    {
+        //
+    }
+}
